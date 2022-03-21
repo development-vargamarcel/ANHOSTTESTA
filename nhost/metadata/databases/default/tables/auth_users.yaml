@@ -37,20 +37,6 @@ object_relationships:
   using:
     foreign_key_constraint_on: default_role
 array_relationships:
-- name: files
-  using:
-    foreign_key_constraint_on:
-      column: uploaded_by_user_id
-      table:
-        name: files
-        schema: storage
-- name: providers
-  using:
-    foreign_key_constraint_on:
-      column: user
-      table:
-        name: providers
-        schema: public
 - name: refreshTokens
   using:
     foreign_key_constraint_on:

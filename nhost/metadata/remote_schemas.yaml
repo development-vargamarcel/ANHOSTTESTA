@@ -1,6 +1,1 @@
-- name: supabseRemote
-  definition:
-    url: https://qwertyretretretretre.hasura.app/v1/graphql
-    timeout_seconds: 60
-    forward_client_headers: true
-  comment: ""
+[]
