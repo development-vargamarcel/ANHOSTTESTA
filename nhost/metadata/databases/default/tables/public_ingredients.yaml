@@ -1,0 +1,11 @@
+table:
+  name: ingredients
+  schema: public
+array_relationships:
+- name: products_ingredients
+  using:
+    foreign_key_constraint_on:
+      column: ingredient
+      table:
+        name: products_ingredients
+        schema: public

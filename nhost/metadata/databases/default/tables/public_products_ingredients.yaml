@@ -1,0 +1,10 @@
+table:
+  name: products_ingredients
+  schema: public
+object_relationships:
+- name: ingredientByIngredient
+  using:
+    foreign_key_constraint_on: ingredient
+- name: productByProduct
+  using:
+    foreign_key_constraint_on: product

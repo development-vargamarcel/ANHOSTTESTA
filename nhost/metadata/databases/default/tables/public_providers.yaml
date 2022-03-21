@@ -1,0 +1,15 @@
+table:
+  name: providers
+  schema: public
+object_relationships:
+- name: userByUser
+  using:
+    foreign_key_constraint_on: user
+array_relationships:
+- name: products
+  using:
+    foreign_key_constraint_on:
+      column: provider
+      table:
+        name: products
+        schema: public

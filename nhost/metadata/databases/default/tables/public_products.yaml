@@ -1,0 +1,15 @@
+table:
+  name: products
+  schema: public
+object_relationships:
+- name: providerByProvider
+  using:
+    foreign_key_constraint_on: provider
+array_relationships:
+- name: products_ingredients
+  using:
+    foreign_key_constraint_on:
+      column: product
+      table:
+        name: products_ingredients
+        schema: public
